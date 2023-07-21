@@ -4,8 +4,8 @@ require('dotenv').config();
 
 export default function handler(request, response) {
 
-  if (req.method === 'OPTIONS') {
-    res.status(200).end()
+  if (request.method === 'OPTIONS') {
+    response.status(200).end()
     return
   }
   
