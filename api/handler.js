@@ -3,6 +3,11 @@ require('dotenv').config();
 
 
 export default function handler(request, response) {
+
+  if (req.method === 'OPTIONS') {
+    res.status(200).end()
+    return
+  }
   
   const mailer = nodemailer.createTransport({
     service: 'gmail',
