@@ -26,7 +26,7 @@ export default function handler(request, response) {
       <h1>New submission on contact form:</h1>
       <br/><br/>
       
-      <h2>Name: ${request.body.firstName} ${request.body.surname}</h2>
+      <h2>Name: ${request.body.name}</h2>
       <br/>
       
       <h2>Email: ${request.body.userEmail}</h2>
